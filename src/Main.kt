@@ -1,7 +1,7 @@
 import java.lang.Math.pow
 import java.lang.Math.sqrt
 
-fun larry(tempeq :MutableList<String>) :String
+fun lar(tempeq :MutableList<String>) :String
 {
 
     var i :Int = 0
@@ -90,7 +90,7 @@ fun larry(tempeq :MutableList<String>) :String
 }
 
 
-fun alice(eq :MutableList<String>, paro :Int, parc :Int) :String
+fun gcts(eq :MutableList<String>, paro :Int, parc :Int) :String
 {
 
     var eqstr :MutableList<String> = mutableListOf<String>()
@@ -196,7 +196,7 @@ fun alice(eq :MutableList<String>, paro :Int, parc :Int) :String
 
     }
 
-    return larry(eqstr)
+    return lar(eqstr)
 
 }
 
@@ -250,7 +250,7 @@ fun main(array :Array<String>)
                     while(z <= eq.lastIndex)
                     {
 
-                        if(z == paro + 1) tempeq.add(alice(eq, paro+1, parc-1))
+                        if(z == paro + 1) tempeq.add(gcts(eq, paro+1, parc-1))
                         if(z < paro || z > parc) tempeq.add(eq[z])
                         z++
 
@@ -270,7 +270,7 @@ fun main(array :Array<String>)
 
         println(eq)
 
-        println(alice(eq, 0, eq.lastIndex))
+        println(gcts(eq, 0, eq.lastIndex))
 
     }
 
